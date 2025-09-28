@@ -1,0 +1,5 @@
+- name: Apply Kubernetes Deployment
+  command: kubectl apply -f /home/ubuntu/k8s/deployment.yaml
+
+- name: Apply Kubernetes Service
+  command: kubectl apply -f /home/ubuntu/k8s/service.yaml

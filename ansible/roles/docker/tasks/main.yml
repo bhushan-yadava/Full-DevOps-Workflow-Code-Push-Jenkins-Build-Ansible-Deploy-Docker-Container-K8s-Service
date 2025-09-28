@@ -1,0 +1,2 @@
+- name: Build and run Docker container
+  command: docker run -d --name myapp -p 5000:5000 myapp:latest
