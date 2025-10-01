@@ -1,4 +1,5 @@
 🚀 Full DevOps Workflow: Code Push → Jenkins Build → Ansible Deploy → Docker Container → Kubernetes Service
+
 📌 Project Overview
 
 This project demonstrates a complete CI/CD pipeline where a code push triggers Jenkins to build the application, deploys it via Ansible into Docker containers, and manages them through Kubernetes services.
@@ -44,6 +45,7 @@ Application exposed via NodePort service.
 
 
 📂 Project Structure
+
 full-devops-workflow/
 │── ansible/
 │   ├── inventory.ini         # Target nodes for Ansible
@@ -69,6 +71,7 @@ full-devops-workflow/
 
 
 ⚙️ Setup Guide
+
 1️⃣ Prerequisites
 
 Ensure the following are installed manually on respective servers/nodes:
@@ -83,6 +86,7 @@ Docker (container runtime)
 
 Kubernetes (cluster orchestration)
 
+
 2️⃣ Jenkins Setup
 
 Install Jenkins on a VM/server.
@@ -94,6 +98,8 @@ GitHub webhook (trigger on git push).
 Credentials for Ansible SSH access.
 
 Add Jenkins pipeline using the provided Jenkinsfile.
+
+
 
 ✅ End-to-End Flow
 
@@ -108,6 +114,7 @@ Kubernetes runs app in pods (via Deployment).
 App exposed through NodePort Service at:
 
 http://<node-ip>:30001
+
 
 
 🔑 Key Highlights
